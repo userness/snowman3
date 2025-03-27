@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowman3</title>
+
+  <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;&display=swap");
+
+* {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1f22;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    margin-right: 10px;
+}
+
+button {
+    background: transparent;
+    color: #9dbae9;
+    font-weight: bold;
+    border: 1px solid #047db7;
+    border-radius: 40px;
+    width: 250px;
+    height: 60px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    outline: none;
+    font-size: 25px;
+}
+
+button:hover {
+    background: #38393b;
+}
+
+a {
+    color: #9dbae9;
+}
+h2 {
+    color: #9dbae9;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+.arrow {
+      filter: invert(39%) sepia(4%) saturate(343%) hue-rotate(180deg) brightness(96%) contrast(86%);
+}
+
+.app img:hover {
+    transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Snowman3</h1>
+        <div class="grid">
+            <div class="app" onclick="openPrint3rWindow()">
+                <img src="https://raw.githubusercontent.com/Blobby-Boi/ExtPrint3r/refs/heads/main/icon.png" alt="E">
+                <a>ExtPrint3r</a>
+            </div>
+            <div class="app" onclick="dextensify()">
+                <img src="https://ext-remover.net/detail/Dextensify/assets/icon.png" alt="App 2">
+                <a>Dexetnsifty</a>
+            </div>
+            <div class="app" onclick="nextpage()">
+                <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/786/786300.png" alt="App 3">
+                <a>Next Page</a>
+            </div>
+        </div>
+    </div>
+  <a onclick=credit()><h2>By userness</h2></a>
+  <script>
+function nextpage() {
+  window.close()
+  window.open("2.html")
+  
+}
+function credit() {
+  window.open('https://github.com/userness')
+}
+function openPrint3rWindow() {
+            fetch('https://extprint3r.github.io/printer.html')
+                .then(response => response.text())
+                .then(html => {
+                    let printWindow = window.open("https://google.com");
+                    printWindow.document.open();
+                    printWindow.document.write(html);
+                    printWindow.document.close();
+                    window.location.replace("https://docs.google.com");
+                })
+        }
+
+function dextensify() {
+            fetch('https://gist.githubusercontent.com/userness/f65212268bd5ea69f5609b60a3d857ac/raw/29b754367587e8cf1f25d3a1c28818791548fca5/dextensify.html')
+                .then(response => response.text())
+                .then(html => {
+                    let printWindow = window.open("https://google.com");
+                    printWindow.document.open();
+                    printWindow.document.write(html);
+                    printWindow.document.close();
+                    window.location.replace("https://docs.google.com");
+                })
+        }
+
+  </script>
+</body>
+</html>
