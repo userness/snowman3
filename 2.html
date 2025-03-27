@@ -1,7 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snowman3</title>
@@ -100,21 +97,26 @@ h2 {
     <div class="container">
         <h1>Page 2 - Snowman3</h1>
         <div class="grid">
-            <div class="app" onclick="openPrint3rWindow()">
-                <img src="https://raw.githubusercontent.com/Blobby-Boi/ExtPrint3r/refs/heads/main/icon.png" alt="E">
-                <a>ExtPrint3r</a>
+            <div class="app" onclick="openNewApp()">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="App 3">
+                <a>PlaceHolder</a>
             </div>
-            <div class="app" onclick="dextensify()">
-                <img src="https://ext-remover.net/detail/Dextensify/assets/icon.png" alt="App 2">
-                <a>Dexetnsifty</a>
+            <div class="app" onclick="openNewApp()">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="App 3">
+                <a>PlaceHolder</a>
+            </div>
+            <div class="app" onclick="openNewApp()">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="App 3">
+                <a>PlaceHolder</a>
             </div>
             <div class="app" onclick="back()">
-                <img class="arrow" src="https://cdn-icons-png.freepik.com/512/3545/3545435.png" alt="App 3">
+                <img class="arrow" src="https://cdn-icons-png.freepik.com/512/3545/3545435.png" alt="App 4">
                 <a>Back</a>
             </div>
         </div>
     </div>
-  <a onclick=credit()><h2>By userness</h2></a>
+    <a onclick="credit()"><h2>By userness</h2></a>
+
   <script>
 function back() {
   window.close()
@@ -124,30 +126,5 @@ function back() {
 function credit() {
   window.open('https://github.com/userness')
 }
-function openPrint3rWindow() {
-            fetch('https://extprint3r.github.io/printer.html')
-                .then(response => response.text())
-                .then(html => {
-                    let printWindow = window.open("https://google.com");
-                    printWindow.document.open();
-                    printWindow.document.write(html);
-                    printWindow.document.close();
-                    window.location.replace("https://docs.google.com");
-                })
-        }
-
-function dextensify() {
-            fetch('https://gist.githubusercontent.com/userness/f65212268bd5ea69f5609b60a3d857ac/raw/29b754367587e8cf1f25d3a1c28818791548fca5/dextensify.html')
-                .then(response => response.text())
-                .then(html => {
-                    let printWindow = window.open("https://google.com");
-                    printWindow.document.open();
-                    printWindow.document.write(html);
-                    printWindow.document.close();
-                    window.location.replace("https://docs.google.com");
-                })
-        }
-
   </script>
-</body>
-</html>
+</body></html>
