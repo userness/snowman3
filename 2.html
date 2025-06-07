@@ -106,9 +106,9 @@ h2 {
                 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Da killer">
                 <a>Securly Kill</a>
             </div>
-            <div class="app" onclick="openNewApp()">
-                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="App 3">
-                <a>PlaceHolder</a>
+            <div class="app" onclick="nextpage()">
+                <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/786/786300.png" alt="Next">
+                <a>Next Page</a>
             </div>
             <div class="app" onclick="back()">
                 <img class="arrow" src="https://cdn-icons-png.freepik.com/512/3545/3545435.png" alt="App 4">
@@ -125,7 +125,10 @@ function back() {
   window.location.replace("index.html");
 }
 function nextpage() {
-  alert("Not yet, buddy.")
+  //window.close()
+  window.location.replace("3.html");
+  //window.open("3.html")
+  
 }
 function credit() {
   window.open('https://github.com/userness')
