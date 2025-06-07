@@ -1,0 +1,140 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowman3</title>
+
+  <style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;&display=swap");
+
+* {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+    background-color: #1e1f22;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    margin-right: 10px;
+}
+
+button {
+    background: transparent;
+    color: #9dbae9;
+    font-weight: bold;
+    border: 1px solid #047db7;
+    border-radius: 40px;
+    width: 250px;
+    height: 60px;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    outline: none;
+    font-size: 25px;
+}
+
+button:hover {
+    background: #38393b;
+}
+
+a {
+    color: #9dbae9;
+}
+h2 {
+    color: #9dbae9;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+.arrow {
+      filter: invert(39%) sepia(4%) saturate(343%) hue-rotate(180deg) brightness(96%) contrast(86%);
+}
+
+.app img:hover {
+    transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Page 3 - Snowman3</h1>
+        <img style="width: 200px; height: 200px;" src="/snowman3.png" class="logo" alt=logo>
+        <div class="grid">
+            <div class="app" onclick="feet()">
+                <img src="https://em-content.zobj.net/source/apple/419/foot_1f9b6.png" alt="LTFEAT">
+                <a>LTFEAT</a>
+            </div>
+            <div class="app" onclick="">
+                <img src="https://flowbite.com/docs/images/examples/image-1@2x.jpg" alt="no">
+                <a>Place Holder</a>
+            </div>
+            <div class="app" onclick="nextpage()">
+                <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/786/786300.png" alt="Next">
+                <a>Next Page</a>
+            </div>
+            <div class="app" onclick="back()">
+                <img class="arrow" src="https://cdn-icons-png.freepik.com/512/3545/3545435.png" alt="App 4">
+                <a>Back</a>
+            </div>
+        </div>
+    </div>
+    <a onclick="credit()"><h2>By userness</h2></a>
+
+  <script>
+function back() {
+  //window.close()
+  //window.open("index.html")
+  window.location.replace("index.html");
+}
+function nextpage() {
+  //window.close()
+  window.location.replace("3.html");
+  //window.open("3.html")
+  
+}
+function credit() {
+  window.open('https://github.com/userness')
+}
+function feet() {
+  window.location.replace("feet.html")
+}
+  </script>
+</body></html>
