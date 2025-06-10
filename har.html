@@ -1,0 +1,102 @@
+<html>
+ <body>
+ <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;&display=swap");
+
+        * {
+            font-family: "Roboto", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1e1f22;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            margin-right: 10px;
+        }
+
+        button {
+            background: transparent;
+            color: #9dbae9;
+            font-weight: bold;
+            border: 1px solid #047db7;
+            border-radius: 40px;
+            width: 125px;
+            height: 30px;
+            padding: px 10px;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out;
+            outline: none;
+            font-size: 24px;
+        }
+		.nd button {
+   			font-size: 17px;
+   		}
+        button:hover {
+            background: #38393b;
+        }
+
+        a {
+            color: #9dbae9;
+    	}
+   		input {
+   			background-color: #38393b;
+   			color: #9dbae9;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+    </style>
+ <h1>Har Tools</h1>
+ <h3>Patched <129</h3>
+ <h5>Exploit by crossjbly, site by userness</h5>
+ <p>1. <button onclick="window.open('https://github.com/T3M1N4L/rigtools-updated-ui/releases/download/5%7C20%7C25/hartools-20250520-183709.har')">Download</button> this .har file</p>
+ <p>2. Go to any of these URLs</p>
+ <select id="urlSelect">
+   <option value='0'>Select any.</option>
+   <option value='devtools://devtools/bundled/inspector.html'>1</option>
+   <option value='devtools://devtools/bundled/js_app.html'>2</option>
+   <option value='devtools://devtools/bundled/devtools_app.html'>3</option>
+   <option value='devtools://devtools/bundled/worker_app.html'>4</option>
+ </select>
+ 
+<script>
+  document.getElementById('urlSelect').addEventListener('change', function () {
+    const url = this.value;
+    if (url) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert('URL copied to clipboard: ' + url);
+      }).catch(err => {
+        alert('Failed to copy URL: ' + err);
+      });
+    }
+  });
+</script>
+ <p>3. Once it loads, add ?experiments=true to the end of the URL</p>
+ <p>4. Find the  >> on the page, then press network. Expand this mini-window all the way</p>
+ <p>  If you are already on the network tab, you don't need to do this.</p>
+ <p>5. Click the little upload button and select the downloaded HARTOOLS.HAR</p>
+ <p>6. Double click on "Double click this", if this doesn't appear try a differfent url</p>
+ </body>
+</html>
